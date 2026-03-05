@@ -20,8 +20,8 @@ each field must be separated by a comma:
 - phone
 
 ## Requirements
-- must be running on Linux or WSL
 - cargo 1.92.0 or newer
+- must be running on Linux or WSL
 - The desired input file must exist within the project directory
 - If you decide to use your own custom input file, it must follow the field requirements above
 
