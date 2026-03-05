@@ -1,16 +1,18 @@
 
 ///represents a person
-struct Person {
-    first_name:String,
-    last_name:String,
-    address:Address,
-    phone_number:u32
+#[derive(Debug)]
+pub struct Person {
+    pub first_name:String,
+    pub last_name:String,
+    pub address:Address,
+    pub phone_number:String
 }
 
 ///Address of a person
-struct Address {
-    street:String,
-    city:String,
-    state:String,
-    zip:String,
+#[derive(Debug)]
+pub struct Address {
+    pub street:String,
+    pub city:String,
+    pub state:String,
+    pub zip:String,
 }

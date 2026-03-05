@@ -1,18 +1,18 @@
 //! Defines configuration info to run project
 
 ///represents configuration info
-struct Config {
+pub struct Config {
     ///input file
-    input: String,
+    pub input: String,
 
     ///output file
-    output: String,
+    pub output: String,
 
 }
 
 
 impl Config {
-    fn build(mut args: impl Iterator<Item = String>) -> Result<Config, &'static str> {
+    pub fn build(mut args: impl Iterator<Item = String>) -> Result<Config, &'static str> {
         args.next();
 
         let input = match args.next() {
