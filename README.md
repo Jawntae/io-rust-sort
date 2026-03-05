@@ -1,6 +1,6 @@
 # Rust IO Project
 **Author** Jawntae St.Germaine
-**Date**3/4/2026
+**Date** 3/4/2026
 
 ## Description
 This program takes an input file filled with data about a person, sorts it, and outputs it to a specified file via the command line.
