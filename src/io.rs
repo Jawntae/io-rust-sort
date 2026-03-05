@@ -16,9 +16,9 @@ pub fn read_file(input:&str) -> Result<Vec<Person>, std::io::Error>{
         let line = line?;
 
         //splits line input by comman and collects everything into vector
-        let parts: Vec<&str> = line.split(',').collect();
-
+        let parts: Vec<&str> = line.split(',').map(|s| s.trim()).collect();
         //address struct for Person field
+
         let address = Address {
             street: parts[2].to_string(),
             city: parts[3].to_string(),
@@ -71,7 +71,11 @@ pub fn struct_sort(people: &mut Vec<Person>) {
     for i in 0..arr_len {
         min_idx = i;
         for j in (i+1)..arr_len {
-            if people[j].first_name.cmp(&people[min_idx].first_name) == Ordering::Less {
+
+            //use .cmp, to_lowercase(), and Ordering::Less for comparing values
+            // from ascending order
+            if people[j].first_name.to_lowercase()
+            .cmp(&people[min_idx].first_name.to_lowercase()) == Ordering::Less {
                 min_idx = j;
             }
         }
