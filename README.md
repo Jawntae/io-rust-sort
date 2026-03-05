@@ -1,5 +1,6 @@
 # Rust IO Project
 **Author** Jawntae St.Germaine
+
 **Date** 3/4/2026
 
 ## Description
@@ -23,7 +24,7 @@ each field must be separated by a comma:
 - The desired input file must exist within the project directory
 - If you decide to use your own custom input file, it must follow the field requirements above
 
-##To run the program on Linux/WSL
+## To run the program on Linux/WSL
 To download the program:
 ```
 git clone https://github.com/Jawntae/io-rust-sort
