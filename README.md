@@ -1,14 +1,14 @@
-#Rust IO Project
+# Rust IO Project
 **Author** Jawntae St.Germaine
 **Date**3/4/2026
 
-##Description
+## Description
 This program takes an input file filled with data about a person, sorts it, and outputs it to a specified file via the command line.
 
-##Purpose
+## Purpose
 This project was originally a C-based project for WCU CS352, but was built in Rust to become more familiar with the language and file IO.
 
-##fields of data required (no other fields may exist other than these)
+## fields of data required (no other fields may exist other than these)
 each field must be separated by a comma: 
 - first name
 - last name
