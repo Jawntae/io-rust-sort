@@ -18,7 +18,7 @@ each field must be separated by a comma:
 - zip
 - phone
 
-##Requirements
+## Requirements
 - must be running on Linux or WSL
 - The desired input file must exist within the project directory
 - If you decide to use your own custom input file, it must follow the field requirements above
